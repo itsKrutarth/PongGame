@@ -12,3 +12,9 @@ class Paddle(Turtle):
 
     def goto(self, x, y):
         return super().goto(x, y)
+    
+    def go_up(self):
+        self.goto(self.xcor(), self.ycor()+20)
+    
+    def go_down(self):
+        self.goto(self.xcor(), self.ycor()-20)
