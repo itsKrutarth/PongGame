@@ -19,3 +19,6 @@ class Ball(Turtle):
     def checkWallCollision(self):
         if(self.ycor()>285 or self.ycor()<-285):
             self.y *= -1
+
+    def paddleCollision(self):
+        self.x *= -1
